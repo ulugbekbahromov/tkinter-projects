@@ -28,6 +28,8 @@ class Calculator:
                                 bg=LIGHT_GRAY, fg=LABEL_COLOR, padx=24, font=LARGE_FONT_STYLE)
         label.pack(expand=True, fill="both")
 
+        return total_label, label
+
     def create_display_frame(self):
         frame = tk.Frame(self.window, height=221, bg=LIGHT_GRAY)
         frame.pack(expand=True, fill="both")
