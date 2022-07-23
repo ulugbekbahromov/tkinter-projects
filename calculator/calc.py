@@ -1,5 +1,4 @@
 import tkinter as tk
-from venv import create
 
 LARGE_FONT_STYLE = ("Arial", 40, "bold")
 SMALL_FONT_STYLE = ("Arial", 16)
@@ -17,7 +16,7 @@ class Calculator:
         self.current_expression = "0"
         self.display_frame = self.create_display_frame()
 
-        self.total_label, self.label = create.create_display_labels()
+        self.total_label, self.label = self.create_display_labels()
         self.button_frame = self.create_button_frame()
 
     def create_display_labels(self):
